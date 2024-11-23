@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+/* for all the pages */
+.bg-color {
+  background-color: #faedcd;
+  margin-bottom: 10%;
+}
+/* Footer */
+.footer-bg {
+  background-color: #fefae0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Titles */
+h1 {
+  font-family: "Edu AU VIC WA NT Pre", serif;
+}
+
+/* Home Page Nav Bar */
+.nav-bar-bg {
+  background-color: #bc6c25;
+}
+.nav-bar {
+  background-color: #bc6c25;
+  height: auto;
+  width: 100%;
+  font-family: "Edu AU VIC WA NT Pre", serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+/* Logo */
+.nav-bar img {
+  height: 40px;
+  width: 40px;
+}
+.nav-bar a {
+  position: relative;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+  font-size: 20px;
+}
+.nav-bar a::after {
+  content: "";
+  position: absolute;
+  background-color: #faedcd;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: 1px;
+}
+.nav-bar a:hover::after {
+  width: 100%;
+}
+/* Carousel */
+#carouselExampleIndicators {
+  width: 100%;
+}
+.carousel-inner {
+  height: 750px;
+}
+.carousel-item img {
+  width: 100%;
+  height: 750px;
+}
+/* About section */
+.rest-img {
+  width: 450px;
+  height: auto;
+}
+.about-us-text {
+  width: 85%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 350;
+  font-size: 16px;
+}
+
+/* Gallery Page */
+#gallery {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+/* Location Page */
+.map {
+  margin-top: 10%;
+}
+
+/* Contact Us Page*/
+.contact-form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+.contact-form ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.contact-form ul li a {
+  text-decoration: none;
+  color: black;
+  margin-left: 5px;
+}
+form {
+  display: grid;
+  grid-template-columns: 6em 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1em;
+  width: 70%;
+  min-width: 20em;
+  padding: 1.5em;
+}
+input[type="submit"] {
+  grid-column: 2;
+  width: 40%;
+  border-radius: 15px;
+  background-color: coral;
+  color: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  opacity: 0.7;
+}
+
+/* input:hover,
+textarea:hover {
+  opacity: 0.7;
+} */
+.contact-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 350;
+  font-size: 16px;
+}
+
+/* Menu Page*/
+.menu-list {
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  font-weight: 300;
+  word-spacing: 1px;
+}
+.menu-list ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  margin-right: 10%;
+}
+.card {
+  border-radius: 15px;
+  margin: 20px;
+  padding: 10px;
+  background: linear-gradient(44.8deg, rgba(255, 136, 102, 0.67) -53.1%, rgba(255, 221, 136, 0.28) 49%);
+}
+
+/* Reponsive layout */
+@media (max-width: 700px) {
+  .nav-bar {
+    margin: 20px;
+  }
+  .carousel-inner {
+    height: 500px;
+  }
+  .carousel-item img {
+    width: 100%;
+    height: 500px;
+  }
+  .rest-img {
+    width: 100%;
+    height: auto;
+  }
+  .about-us-text {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  #gallery img {
+    height: 450px;
+    width: 100px;
+  }
+  .map h2 {
+    margin-top: 5%;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact-description {
+    width: 80%;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
