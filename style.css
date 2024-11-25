@@ -38,11 +38,7 @@ h1 {
   justify-content: space-around;
   padding: 10px;
 }
-/* Logo */
-.nav-bar img {
-  height: 40px;
-  width: 40px;
-}
+
 .nav-bar a {
   position: relative;
   list-style: none;
