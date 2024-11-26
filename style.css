@@ -126,14 +126,18 @@ input[type="submit"] {
   grid-column: 2;
   width: 40%;
   border-radius: 15px;
-  background-color: coral;
+  background-color: #bc6c25;
   color: white;
+  border: none;
+}
+input[type="submit"]:hover {
+  background-color: #eb2632;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 /* input:hover,
@@ -168,7 +172,11 @@ textarea:hover {
   border-radius: 15px;
   margin: 20px;
   padding: 10px;
-  background: linear-gradient(44.8deg, rgba(255, 136, 102, 0.67) -53.1%, rgba(255, 221, 136, 0.28) 49%);
+  background: linear-gradient(
+    44.8deg,
+    rgba(255, 136, 102, 0.67) -53.1%,
+    rgba(255, 221, 136, 0.28) 49%
+  );
 }
 
 /* Reponsive layout */
