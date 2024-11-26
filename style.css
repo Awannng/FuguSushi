@@ -21,6 +21,7 @@
 /* Titles */
 h1 {
   font-family: "Edu AU VIC WA NT Pre", serif;
+  font-weight: 800;
 }
 
 /* Home Page Nav Bar */
@@ -151,6 +152,12 @@ textarea:hover {
 }
 
 /* Menu Page*/
+.menu-bg {
+  background-image: url(/images/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
 .menu-list {
   margin-right: auto;
   margin-left: auto;
@@ -167,16 +174,14 @@ textarea:hover {
   list-style: none;
   margin-bottom: 10px;
   margin-right: 10%;
+  font-weight: 400;
 }
 .card {
   border-radius: 15px;
   margin: 20px;
   padding: 10px;
-  background: linear-gradient(
-    44.8deg,
-    rgba(255, 136, 102, 0.67) -53.1%,
-    rgba(255, 221, 136, 0.28) 49%
-  );
+  opacity: 90%;
+  background-color: #eadca6;
 }
 
 /* Reponsive layout */
