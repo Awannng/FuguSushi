@@ -175,8 +175,8 @@ textarea:focus {
   margin-right: auto;
   margin-left: auto;
   width: 80%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 20px;
+  margin-bottom: 6%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
@@ -238,6 +238,7 @@ textarea:focus {
   .menu-list {
     display: flex;
     flex-direction: column;
+    margin-bottom: 18%;
   }
 
   .content {
