@@ -164,6 +164,19 @@ textarea:focus {
   font-size: 16px;
 }
 
+.contact_button {
+  background: #eb2632;
+  border: none;
+  padding: 3px;
+  border-radius: 10px;
+}
+.contact_button a {
+  text-decoration: none;
+  color: white;
+}
+.contact_button:hover{
+  opacity: 0.9;
+}
 /* Menu Page*/
 .menu-bg {
   background-image: url(/images/bg1.jpg);
@@ -197,17 +210,29 @@ textarea:focus {
   background-color: #eadca6;
 }
 
+/* Thank You Page */
+.thankyou_home {
+  text-decoration: none;
+  color: white;
+  background: #bc6c25;
+  border-radius: 15px;
+  padding: 5px;
+}
+.thankyou_home:hover {
+  opacity: 0.9;
+}
+
 /* Reponsive layout */
 @media (max-width: 700px) {
   .nav-bar {
     margin: 20px;
   }
   .carousel-inner {
-    height: 500px;
+    height: 400px;
   }
   .carousel-item img {
     width: 100%;
-    height: 500px;
+    height: 400px;
   }
   .rest-img {
     width: 100%;
@@ -242,8 +267,8 @@ textarea:focus {
   }
 
   .content {
-  position: relative;
-  z-index: 9999;
-  margin-bottom: 100px;
-}
+    position: relative;
+    z-index: 9999;
+    margin-bottom: 100px;
+  }
 }
