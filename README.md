@@ -10,4 +10,3 @@ A commercial web page to promote a Japanese restaurant, focusing on visualizatio
 - HTML 5
 - CSS
 - Bootstrap
-- Java Script
